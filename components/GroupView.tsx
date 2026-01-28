@@ -59,8 +59,11 @@ const GroupView: React.FC<GroupViewProps> = ({
       {/* Header */}
       <div className="bg-gray-900 border-b border-gray-800 px-6 py-4 flex items-center justify-between shrink-0 shadow-md">
         <div className="flex items-center gap-4">
-            <div className="p-2 rounded-lg bg-gray-800 border border-gray-700">
-                <IconFolder className="w-6 h-6" style={{ color: group.color }} />
+            <div className="flex items-center gap-3">
+                <img src="/icon48.png" alt="StreamBitch Logo" className="w-8 h-8 rounded-lg" />
+                <div className="p-2 rounded-lg bg-gray-800 border border-gray-700">
+                    <IconFolder className="w-6 h-6" style={{ color: group.color }} />
+                </div>
             </div>
             <div>
                 <h2 className="text-xl font-bold text-white flex items-center gap-2">

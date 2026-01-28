@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { IconGrid } from './Icons';
 
 interface SetupProps {
   onStart: (models: string[]) => void;
@@ -33,8 +32,8 @@ const Setup: React.FC<SetupProps> = ({ onStart, savedModels }) => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-gray-900 to-gray-950 p-6">
       <div className="w-full max-w-2xl bg-gray-850 rounded-xl shadow-2xl border border-gray-800 p-8 transform transition-all animate-fade-in-up">
-        <div className="flex items-center justify-center mb-6 text-brand-500">
-          <IconGrid className="w-16 h-16" />
+        <div className="flex items-center justify-center mb-6">
+          <img src="/icon128.png" alt="StreamBitch Logo" className="w-16 h-16" />
         </div>
         
         <h1 className="text-3xl font-bold text-center text-white mb-2">StreamBitch</h1>

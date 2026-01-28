@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { DashboardItem, GroupModel, StreamModel } from '../types';
 import StreamCard from './StreamCard';
 import GroupCard from './GroupCard';
-import { IconSettings, IconPlus, IconLogout, IconGrid, IconRefresh, IconFolder } from './Icons';
+import { IconSettings, IconPlus, IconLogout, IconRefresh, IconFolder } from './Icons';
 
 interface DashboardProps {
   models: DashboardItem[];
@@ -124,9 +124,7 @@ const Dashboard: React.FC<DashboardProps> = ({
       {/* Top Bar */}
       <header className="bg-gray-900 border-b border-gray-800 px-6 py-3 flex items-center justify-between shrink-0 shadow-md z-10">
         <div className="flex items-center gap-3">
-          <div className="bg-brand-600 p-1.5 rounded-lg">
-             <IconGrid className="w-5 h-5 text-white" />
-          </div>
+          <img src="/icon48.png" alt="StreamBitch Logo" className="w-8 h-8 rounded-lg" />
           <h1 className="text-xl font-bold text-gray-100 hidden sm:block">StreamBitch</h1>
           <span className="bg-gray-800 text-gray-400 px-2 py-0.5 rounded-full text-xs font-mono border border-gray-700">
             {models.length} Items
